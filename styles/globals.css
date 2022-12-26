@@ -493,6 +493,12 @@ nav input {
 .order-summary button {
   width: 100%;
 }
+.empty-cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .cart-items {
   display: flex;
   flex-direction: column;

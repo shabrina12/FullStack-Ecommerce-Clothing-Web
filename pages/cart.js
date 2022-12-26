@@ -1,32 +1,49 @@
 import React, { useRef } from 'react';
-import Link from 'next/link';
-import { AiOutlineMinus, AiOutlinePlus, AiOutlineLeft, AiOutlineShopping } from 'react-icons/ai';
+import { AiOutlineMinus, AiOutlinePlus, AiOutlineShopping } from 'react-icons/ai';
 import {HiOutlineTrash} from 'react-icons/hi'
 import toast from 'react-hot-toast';
 import { useStateContext } from '../context/StateContext';
 import { urlFor } from '../lib/client';
+import getStripe from '../lib/getStripe';
 
 const Cart = () => {
   const cartRef = useRef();
   const {setShowCart, cartItems, totalPrice, totalQty, onRemove, toggleCartItemQuantity} = useStateContext();
 
+  const handleCheckout = async () => {
+    const stripe = await getStripe();
+
+    const response = await fetch('/api/stripe', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(cartItems),
+    });
+
+    if(response.statusCode === 500) return;
+    
+    const data = await response.json();
+
+    toast.loading('Redirecting...');
+
+    stripe.redirectToCheckout({ sessionId: data.id });
+  }
+
   return (
     <div className='cart-wrapper' ref={cartRef}>
+    {/* {cartItems.length >= 1 && cartItems.map((item) => ( */}
       <h2>Shopping Cart</h2>
+    {/* ))} */}
       <div className='cart-container'>
-        {cartItems.length < 1 && (
-            <div className='empty-cart'>
-                <AiOutlineShopping size={150} />
-                <h1>Your shopping bag is empty</h1>
-                <Link href='/'>
-                    <button type='button' onClick={() => setShowCart(false)}>
-                        Continue Shopping
-                    </button>
-                </Link>
-            </div>
-        )}
-
         <div className='cart-items'>
+            {cartItems.length < 1 && (
+                <div className='empty-cart'>
+                    <AiOutlineShopping size={150} />
+                    <h1>Your shopping bag is empty</h1>
+                </div>
+            )}
+
             {cartItems.length >= 1 && cartItems.map((item) => (
                 <div key={item._id} className='item-card'>
                     <div className='item-image'>
@@ -66,12 +83,12 @@ const Cart = () => {
             <p>Sub Total</p>
             <span>${totalPrice}</span>
           </div>
-          <div className='total'>
+          {/* <div className='total'>
             <p>Total</p>
             <span>${totalPrice}</span>
-          </div> 
+          </div>  */}
           <div>
-            <button type='button' onClick=''>Process to Checkout</button>
+            <button type='button' onClick={handleCheckout}>Process to Checkout</button>
           </div>         
         </div>
         )}  
