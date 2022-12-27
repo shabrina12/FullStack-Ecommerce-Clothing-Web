@@ -21,13 +21,20 @@ export default {
             name: 'category',
             title: 'Category',
             type: 'string',
+            options: {
+                list: [
+                    {title: "female", value: "female"},
+                    {title: "male", value: "male"},
+                    {title: "kids", value: "kids"}
+                ],
+            },
         },
         {
             name: 'slug',
             title: 'Slug',
             type: 'slug',
             options: { 
-                source: name,
+                source: "name",
                 maxLength: 90,
             }
         },
@@ -39,7 +46,20 @@ export default {
         {
             name: 'details',
             title: 'Details',
-            type: 'string',
+            type: 'array', 
+            of: [{type: 'block'}]
+        },
+        {
+            name: 'care',
+            title: 'Care',
+            type: 'array', 
+            of: [{type: 'block'}]
         }
     ]
 }
+// {
+//     name: 'details',
+//     title: 'Details',
+//     type: 'array', 
+//     of: [{type: 'block'}]
+// }

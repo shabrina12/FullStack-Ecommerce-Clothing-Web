@@ -5,9 +5,15 @@ import {CgShoppingCart} from 'react-icons/cg'
 import { useStateContext } from '../../context/StateContext';
 
 const ProductDetails = ({products, product}) => {
-    const { image, name, details, price } = product;
+    const { image, name, details, price, care } = product;
     const [index, setIndex] = useState(0);
     const {decQty, incQty, qty, onAdd} = useStateContext();
+
+    const careList = [];
+    
+    {for (let i = 0; i < care.length; i++) {
+        careList.push(care[i].children[0].text)
+    }}
 
     return (
         <div className='products'>
@@ -46,15 +52,14 @@ const ProductDetails = ({products, product}) => {
             <div className='product-desc-container'>
                 <div>
                     <h4>PRODUCT DETAILS</h4>
-                    <p>{details}</p>  
+                    <p>{details[0].children[0].text}</p>  
                 </div>
                 <div>
                     <h4>PRODUCT CARE</h4>
                     <ul>
-                        <li>Hand wash using cold water.</li>
-                        <li>Do not using bleach.</li>
-                        <li>Hang it to dry.</li>
-                        <li>Iron on low temperature.</li>
+                    {careList.map(list => (
+                        <li>{list}</li>
+                    ))}
                     </ul>
                 </div>
             </div>
