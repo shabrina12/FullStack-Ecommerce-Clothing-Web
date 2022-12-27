@@ -25,7 +25,7 @@ This project is a full stack e-commerce website created with Next js. I created 
 - Connecting Stripe APIs to power online payment processing for e-commerce
 
 ### Screenshot
-![Design overview for Dine Market e-commerce](./src/assets/images/header-beu.png)
+![Design overview for Dine Market e-commerce](./src/assets/header-beu.png)
 
 ### Links
 The live site has not been published yet
@@ -55,8 +55,8 @@ Code snippets, see below:
 ```js
 empty for now
 ```
-![payment with stripe](./src/assets/images/payment.png)
-![payment success](./src/assets/images/success-pay.png)
+![payment with stripe](./src/assets/payment.png)
+![payment success](./src/assets/success-pay.png)
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
