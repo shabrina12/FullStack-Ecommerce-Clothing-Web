@@ -5,12 +5,12 @@ import {CgShoppingCart} from 'react-icons/cg'
 import { useStateContext } from '../../context/StateContext';
 
 const ProductDetails = ({products, product}) => {
-    const { image, name, details, price, care } = product;
+    const { image, name, details, price, tags, care } = product;
     const [index, setIndex] = useState(0);
     const {decQty, incQty, qty, onAdd} = useStateContext();
 
     const careList = [];
-    
+
     {for (let i = 0; i < care.length; i++) {
         careList.push(care[i].children[0].text)
     }}
@@ -33,7 +33,20 @@ const ProductDetails = ({products, product}) => {
                     </div>
                 </div>
                 <div className='product-details'>
-                    <h3>{name}</h3>
+                    <div className='name-and-category'>
+                        <h3>{name}</h3>
+                        <span>{tags}</span>   
+                    </div>
+                    <div className='size'>
+                        <p>SELECT SIZE</p>
+                        <ul>
+                            <li>XS</li>
+                            <li>S</li>
+                            <li>M</li>
+                            <li>L</li>
+                            <li>XL</li>
+                        </ul>
+                    </div>
                     <div className='quantity-desc'>
                         <h4>Quantity: </h4>
                         <div>
@@ -50,6 +63,11 @@ const ProductDetails = ({products, product}) => {
             </div>
 
             <div className='product-desc-container'>
+                <div className="desc-background">
+                    Overview
+                </div>
+                <h2>Product Information</h2>
+
                 <div>
                     <h4>PRODUCT DETAILS</h4>
                     <p>{details[0].children[0].text}</p>  

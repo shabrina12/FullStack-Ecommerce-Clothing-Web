@@ -23,9 +23,23 @@ export default {
             type: 'string',
             options: {
                 list: [
-                    {title: "female", value: "female"},
-                    {title: "male", value: "male"},
-                    {title: "kids", value: "kids"}
+                    {title: "Female", value: "Female"},
+                    {title: "Male", value: "Male"},
+                    {title: "Kids", value: "Kids"}
+                ],
+            },
+        },
+        {
+            name: 'tags',
+            title: 'Tags',
+            type: 'string',
+            options: {
+                list: [
+                    {title: "Sweater", value: "Sweater"},
+                    {title: "Dress", value: "Dress"},
+                    {title: "T Shirts", value: "T Shirts"},
+                    {title: "Pants", value: "Pants"},
+                    {title: "Jackets", value: "Jackets"}
                 ],
             },
         },
@@ -57,9 +71,3 @@ export default {
         }
     ]
 }
-// {
-//     name: 'details',
-//     title: 'Details',
-//     type: 'array', 
-//     of: [{type: 'block'}]
-// }
