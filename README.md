@@ -25,7 +25,7 @@ This project is a full stack e-commerce website creation with Next js. I created
 - Connecting Stripe APIs to power online payment processing for e-commerce
 
 ### Screenshot
-![Design overview for BEU Music landing page](./src/images/header-beu.png)
+![Design overview for Dine Market e-commerce](./src/images/header-beu.png)
 
 ### Links
 The live site has not been published yet
