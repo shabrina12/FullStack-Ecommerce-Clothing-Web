@@ -29,7 +29,8 @@ button, .cart, nav li {
 .header button, 
 .features-section .content .right button, 
 .add-to-cart button,
-.order-summary button {
+.order-summary button,
+.success button {
   font-family: 'Sora', sans-serif;
   font-weight: 600;
   line-height: 18px;
@@ -176,19 +177,6 @@ nav input {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 1rem;
 }
-/* .header button {
-  background-color: black;
-  color: white;
-  padding: 1rem;
-  width: 35%;
-  font-weight: 600;
-  font-size: 1rem;
-  line-height: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-} */
 .header-circle {
   width: 600px;
   height: 600px;
@@ -645,17 +633,6 @@ nav input {
   text-align: justify;
   color: #212121;
 }
-/* .features-section .content .right button {
-  font-family: 'Sora', sans-serif;
-  font-weight: 600;
-  font-size: 0.875rem;
-  line-height: 18px;
-  background-color: #212121;
-  padding: 10px 0;
-  width: 50%;
-  text-align: center;
-  color: white;
-} */
 
 /*-------------------- NEWSLETTER SECTION ------------------*/
 .newsletter {
@@ -761,4 +738,37 @@ footer p, footer li {
   font-size: 1rem;
   line-height: 15px;
   color: #212121;
+}
+
+/*------------------ SUCCESS PAYMENT PAGE ----------------*/
+.success {
+  margin: 4rem 8rem;
+  padding: 6rem 0;
+  background-color: #F1F1F1;;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 15px;
+}
+.success .icon {
+  color: green;
+}
+.success h1 {
+  font-size: 2.75rem;
+  margin: 0.5rem 0;
+}
+.success button {
+  padding: 15px;
+  width: 400px;
+  font-size: 1.125rem;
+  border-radius: 10px;
+}
+.success .description, .success button  {
+  margin-top: 2rem;
+}
+.success .description a {
+  margin-left: 5px;
+  color: red;
 }
