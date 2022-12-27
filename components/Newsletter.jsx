@@ -7,7 +7,7 @@ const Newsletter = () => {
 
   return (
     <section className='newsletter'>
-      <div class="newsletter-background">
+      <div className="newsletter-background">
         Newsletter
       </div>
       <h1>Subscribe Our Newsletter</h1>

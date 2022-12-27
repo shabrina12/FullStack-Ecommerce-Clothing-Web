@@ -12,7 +12,7 @@ const FeaturesBanner = () => {
 
       <div className='content'>
         <div className='left'>
-          <div class="feature-background">
+          <div className="feature-background">
             Different from others
           </div>
           <div>
