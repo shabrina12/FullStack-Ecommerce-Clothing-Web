@@ -64,7 +64,7 @@ The project is still under development
 
 ### Useful resources
 - [Figma Web Design & UI kit i used for this project is design by Weird Design Studio](https://ui8.net/ui-market/products/e-commerce-ui-website-design?status=7)
-- [UI/UX Design Resources](https://ui8.net/) - This website provide many UI/UX design some are free. I really liked this website and will use it going forward.
+- [UI/UX Design Resources](https://ui8.net/) - This website provide many UI/UX design, some are even free. I really liked this website and will use it going forward.
 - [Tutorial Modern Full Stack ECommerce React Application with Stripe by JavaScript Mastery](https://www.youtube.com/watch?v=4mOkFXyxfsU&t=10459s) - This youtube tutorial really helps in understanding Next js and the use of sanity and stripe for e-commerce
 
 
