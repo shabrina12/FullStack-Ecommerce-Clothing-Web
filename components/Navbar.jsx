@@ -17,7 +17,7 @@ const Navbar = () => {
         <Link href='/female'><li>Female</li></Link>
         <Link href='/male'><li>Male</li></Link>
         <Link href='/kids'><li>Kids</li></Link>
-        <Link href='/products'><li>Popular Products</li></Link>
+        <Link href='/products'><li>All Products</li></Link>
       </ul>
       <div className='search-bar'>
         <CiSearch />
