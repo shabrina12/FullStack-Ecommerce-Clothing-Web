@@ -45,6 +45,7 @@ The live site has not been published yet
 - [Stripe](https://stripe.com/en-gb-us) - APIs to power online payment processing for e-commerce
 - [react-hot-toast](https://react-hot-toast.com/) - 
 - [react icons](https://react-icons.github.io/react-icons/) - JS library to add icons
+- [swiper js](https://swiperjs.com/) - JS library to add slider component
 - [canvas-confetti](https://www.npmjs.com/package/canvas-confetti) - JS library to add confetti as a style 
 
 ### What I learned
@@ -68,6 +69,8 @@ The project is still under development
 - [Figma Web Design & UI kit i used for this project is design by Weird Design Studio](https://ui8.net/ui-market/products/e-commerce-ui-website-design?status=7)
 - [UI/UX Design Resources](https://ui8.net/) - This website provide many UI/UX design, some are even free.
 - [Tutorial Modern Full Stack ECommerce React Application with Stripe by JavaScript Mastery](https://www.youtube.com/watch?v=4mOkFXyxfsU&t=10459s) - This youtube tutorial really helps in understanding Next js and the use of sanity and stripe for e-commerce
+- [Swiper React Components](https://swiperjs.com/react#styles)
+- [Customize Prev/Next Button of Swiper Arrows](https://www.timo-ernst.net/blog/2020/09/12/arrows-in-react-swiper-js-how-to-customize-prev-next-button/)
 
 
 ## Author
