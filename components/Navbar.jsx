@@ -14,10 +14,10 @@ const Navbar = () => {
         <Image src={logo} width={140} height={25} alt='logo' />
       </Link>
       <ul>
-        <Link href='/'><li>Female</li></Link>
-        <Link href='/'><li>Male</li></Link>
-        <Link href='/'><li>Kids</li></Link>
-        <Link href='/'><li>Popular Products</li></Link>
+        <Link href='/female'><li>Female</li></Link>
+        <Link href='/male'><li>Male</li></Link>
+        <Link href='/kids'><li>Kids</li></Link>
+        <Link href='/products'><li>Popular Products</li></Link>
       </ul>
       <div className='search-bar'>
         <CiSearch />
