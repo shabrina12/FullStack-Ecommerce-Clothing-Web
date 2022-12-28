@@ -25,7 +25,7 @@ This project is a full stack e-commerce website created with Next js. I created 
 - Connecting Stripe APIs to power online payment processing for e-commerce
 
 ### Screenshot
-![Design overview for Dine Market e-commerce](./src/images/header-beu.png)
+![Design overview for Dine Market e-commerce](./src/assets/header-beu.png)
 
 ### Links
 The live site has not been published yet
@@ -55,6 +55,8 @@ Code snippets, see below:
 ```js
 empty for now
 ```
+![payment with stripe](./src/assets/payment.png)
+![payment success](./src/assets/success-pay.png)
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
@@ -64,7 +66,7 @@ The project is still under development
 
 ### Useful resources
 - [Figma Web Design & UI kit i used for this project is design by Weird Design Studio](https://ui8.net/ui-market/products/e-commerce-ui-website-design?status=7)
-- [UI/UX Design Resources](https://ui8.net/) - This website provide many UI/UX design, some are even free. I really liked this website and will use it going forward.
+- [UI/UX Design Resources](https://ui8.net/) - This website provide many UI/UX design, some are even free.
 - [Tutorial Modern Full Stack ECommerce React Application with Stripe by JavaScript Mastery](https://www.youtube.com/watch?v=4mOkFXyxfsU&t=10459s) - This youtube tutorial really helps in understanding Next js and the use of sanity and stripe for e-commerce
 
 
