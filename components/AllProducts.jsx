@@ -2,8 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import { urlFor } from '../lib/client'
 
-const Allproducts = ({allproducts: {image, name, slug, tags, price}}) => {
-    return (
+const Allproducts = ({allproducts: {image, name, slug, tags, price}}) => {  
+  return (
         <div>
           <Link href={`/product/${slug.current}`}>
             <div className='Allproduct-card'>

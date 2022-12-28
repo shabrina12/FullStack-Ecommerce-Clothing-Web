@@ -1,6 +1,12 @@
 import React from 'react'
 import {client} from '../lib/client'
 import { HeroBanner, EventsBanner, Newsletter, FeaturesBanner, Product } from '../components'
+import { Navigation, A11y } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 const Home = ({products, bannerData}) => {
   return (
@@ -13,9 +19,20 @@ const Home = ({products, bannerData}) => {
           <span>PRODUCTS</span>
           <h2>Check What We Have</h2>
         </div>
-        <div className='products-container'>
-        {products?.map(product => <Product key={product._id} product={product} />)}
-        </div>
+        <Swiper
+            modules={[Navigation, A11y]}
+            spaceBetween={0}
+            slidesPerView={3}
+            navigation
+        >
+          <div className='products-container'>
+            {products?.map(product => (
+              <SwiperSlide>
+                <Product key={product._id} product={product} />
+              </SwiperSlide>
+            ))}
+          </div>
+        </Swiper>
       </div>
 
       <FeaturesBanner />

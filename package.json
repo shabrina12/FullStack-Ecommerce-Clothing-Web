@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@material-ui/core": "^4.12.4",
     "@next/font": "13.1.0",
     "@sanity/client": "^3.4.1",
     "@sanity/image-url": "^1.0.1",
@@ -22,7 +23,8 @@
     "react-dom": "18.2.0",
     "react-hot-toast": "^2.4.0",
     "react-icons": "^4.7.1",
-    "stripe": "^11.5.0"
+    "stripe": "^11.5.0",
+    "swiper": "^8.4.5"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.18.6"
