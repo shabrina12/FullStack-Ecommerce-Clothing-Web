@@ -25,7 +25,7 @@ This project is a full stack e-commerce website created with Next js. I created 
 - Connecting Stripe APIs to power online payment processing for e-commerce
 
 ### Screenshot
-![Design overview for Dine Market e-commerce](./src/assets/header-beu.png)
+![Design overview for Dine Market e-commerce](./src/assets/header.png)
 
 ### Links
 The live site has not been published yet
@@ -50,7 +50,8 @@ The live site has not been published yet
 
 ### What I learned
 
-I learned a simple way to add slider function in testimonial section using react slick library
+I learned an easy way to add slider function in product section using swiper js library. And add text as a background in the features and newsletter section as shown below
+![adding text as background](./src/assets/middle-section.png)
 
 Code snippets, see below:
 ```js
