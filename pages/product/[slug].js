@@ -63,16 +63,17 @@ const ProductDetails = ({products, product}) => {
             </div>
 
             <div className='product-desc-container'>
-                <div className="desc-background">
-                    Overview
+                <div className='desc-title'>
+                    <div className="desc-background">
+                        Overview
+                    </div>
+                    <h2>Product Information</h2>  
                 </div>
-                <h2>Product Information</h2>
-
-                <div>
+                <div className='desc-details'>
                     <h4>PRODUCT DETAILS</h4>
                     <p>{details[0].children[0].text}</p>  
                 </div>
-                <div>
+                <div className='desc-care'>
                     <h4>PRODUCT CARE</h4>
                     <ul>
                     {careList.map(list => (

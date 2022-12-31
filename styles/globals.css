@@ -518,10 +518,16 @@ nav input {
   display: flex;
   flex-direction: column;
   margin-top: 4rem;
-  padding: 6rem 4rem;
+  padding: 2rem 4rem 6rem;
   gap: 2rem;
 }
-.product-desc-container h2 {
+.desc-title {
+  border-bottom: 2px solid #C4C4C4;
+  position: relative;
+  width: 100%;
+  height: 150px;
+}
+.desc-title h2 {
   font-weight: 700;
   font-size: 1.4rem;
   line-height: 25px;
@@ -529,7 +535,8 @@ nav input {
   color: #212121;
   padding-bottom: 3rem;
   z-index: 2;
-  border-bottom: 2px solid #C4C4C4;
+  top: 45%;
+  position: absolute;
 }
 .desc-background {
   font-weight: 800;
@@ -537,10 +544,9 @@ nav input {
   line-height: 151px;
   color: #f2f3f7;
   opacity: 0.7;
-  position: absolute;
-  left: 12%;
-  bottom: -54%;
   z-index: -1;
+  width: 100%;
+  height: 100%;
 }
 .product-desc-container div {
   display: flex;
@@ -1102,6 +1108,7 @@ footer p, footer li {
   .footer {
       grid-template-columns: 1fr; 
       grid-gap: 2rem;
+      padding: 4rem;
   }
   .footer .logo {
       gap: 2rem;
@@ -1116,6 +1123,36 @@ footer p, footer li {
   }
   .copyright p {
       margin: 0.8rem 2rem;
+  }
+  /*-------------------- SINGLE PRODUCT PAGE ------------------*/
+  .products {
+    padding: 4rem;
+  }
+  .product-detail-container {
+    flex-direction: column;
+  }
+  .big-image-container {
+    width: 70%;
+    height: 100%;
+  }
+  .desc-background {
+    font-size: 6rem;
+  }
+  /*-------------------- CART PAGE ------------------*/
+  .cart-wrapper {
+    margin: 4rem;
+    padding: 0;
+  }
+  .cart-container {
+    flex-direction: column;
+  }
+  .item-image {
+    width: 50%;
+    height: 10%;
+  }
+  .item-details {
+    width: 100%;
+    gap: 0.5rem;
   }
 }
 
@@ -1176,7 +1213,6 @@ footer p, footer li {
   .event-banner-right {
     flex-direction: column;
   }
-
   /*-------------------- PRODUCTS SECTION ------------------*/
   .products-outer-container {
     padding: 4rem 2rem;
@@ -1224,8 +1260,26 @@ footer p, footer li {
     margin-left: 0;
   }
   /*-------------------- FOOTER SECTION ------------------*/
+  .footer {
+    padding: 4rem;
+  }
   .copyright {
     grid-template-columns: 1fr;
+  }
+  /*-------------------- SINGLE PRODUCT PAGE ------------------*/
+  .products, .product-desc-container {
+      padding: 2rem;
+  }
+  .desc-background {
+      font-size: 4.5rem;
+  }
+  .small-image{
+    width: 80px;
+    height: 80px;
+  }
+   /*-------------------- CART PAGE ------------------*/
+  .item-card {
+    flex-direction: column;
   }
 }
 
@@ -1242,5 +1296,27 @@ footer p, footer li {
   .newsletter-background {
     font-size: 4rem;
     transform: translate(0, 50%);
+  }
+  /*-------- SINGLE PRODUCT PAGE ----------*/
+  .small-image{
+    width: 50px;
+    height: 50px;
+  }
+  .desc-background {
+    font-size: 3.2rem;
+  }
+  .desc-details, .desc-care {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  /*-------------------- CART PAGE ------------------*/
+  .item-image {
+    width: 80%;
+    height: 20%;
+  }
+  /*------------ FOOTER -----------*/
+  .footer {
+    padding: 4rem 2rem;
   }
 }
