@@ -6,13 +6,13 @@ import event3 from '../src/assets/event3.png'
 
 const EventsBanner = () => {
   return (
-    <section className='event-promo'>
+    <section className='event-container'>
       <div className='subtitle'>
         <span>PROMOTIONS</span>
         <h2>Our Promotions Events</h2>
       </div>
 
-      <div className='event-banner-container'>
+      <div className='event-banner'>
         <div className='event-banner-left'>
           <div className='event-card'>
             <div className='content'>

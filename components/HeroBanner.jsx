@@ -11,7 +11,7 @@ import Link from 'next/link';
 const HeroBanner = () => {
   return (
     <header className='header'>
-        <div className='header-content-left'>
+        <div className='header-left-side'>
             <div className='header-content'>
                 <span>Sale 70%</span>
                 <h1>An Industrial Take on Streetwear</h1>
@@ -20,6 +20,7 @@ const HeroBanner = () => {
                      <button className='btn' type='button'><CgShoppingCart size={26} />  Start Shopping</button>
                 </Link>
             </div>
+
             <div className='header-featured'>
                 <Image src={featured1} width={100} height={35} alt='img' />
                 <Image src={featured2} width={100} height={35} alt='img' />
@@ -27,7 +28,8 @@ const HeroBanner = () => {
                 <Image src={featured4} width={100} height={35} alt='img' />
             </div>
         </div>
-        <div className='header-content-right'>
+
+        <div className='header-right-side'>
             <div className='header-circle'>
                 <Image className='header-img' src={headerImg} width={650} height={650} alt='header image' />
             </div>
