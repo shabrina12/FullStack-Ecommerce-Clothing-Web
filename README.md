@@ -7,6 +7,7 @@ This project is a full stack e-commerce website created with Next js. I created 
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
+  - [Credit](#credit)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -30,6 +31,9 @@ This project is a full stack e-commerce website created with Next js. I created 
 ### Links
 The live site has not been published yet
 - [Live Site URL](not yet)
+
+### Credit
+[Figma Web Design & UI kit i used for this project is design by Weird Design Studio](https://ui8.net/ui-market/products/e-commerce-ui-website-design?status=7)
 
 ## My process
 
@@ -67,7 +71,6 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 The project is still under development
 
 ### Useful resources
-- [Figma Web Design & UI kit i used for this project is design by Weird Design Studio](https://ui8.net/ui-market/products/e-commerce-ui-website-design?status=7)
 - [UI/UX Design Resources](https://ui8.net/) - This website provide many UI/UX design, some are even free.
 - [Tutorial Modern Full Stack ECommerce React Application with Stripe by JavaScript Mastery](https://www.youtube.com/watch?v=4mOkFXyxfsU&t=10459s) - This youtube tutorial really helps in understanding Next js and the use of sanity and stripe for e-commerce
 - [Swiper React Components](https://swiperjs.com/react#styles)
