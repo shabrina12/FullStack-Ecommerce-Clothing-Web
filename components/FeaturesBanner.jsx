@@ -38,7 +38,7 @@ const FeaturesBanner = () => {
           <div>
             <p>This piece is ethically crafted in our small family-owned workshop in Peru with unmatched attention to detail and care. The Natural color is the actual natural color of the fiber, undyed and 100% traceable.</p>
             <Link href={'/products'}>
-              <button type='button'>See All Product</button>
+              <button className='btn' type='button'>See All Product</button>
             </Link>
           </div>
         </div>

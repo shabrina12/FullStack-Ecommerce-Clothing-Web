@@ -88,7 +88,7 @@ const Cart = () => {
             <span>${totalPrice}</span>
           </div>  */}
           <div>
-            <button type='button' onClick={handleCheckout}>Process to Checkout</button>
+            <button className='btn' type='button' onClick={handleCheckout}>Process to Checkout</button>
           </div>         
         </div>
         )}  

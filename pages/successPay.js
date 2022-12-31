@@ -30,7 +30,7 @@ const successPay = () => {
                 </a>
             </p>
             <Link href="/">
-                <button type="button" width="300px">
+                <button className='btn' type="button" width="300px">
                     Continue Shopping
                 </button>
             </Link>

@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-const Home = ({products, bannerData}) => {
+const Home = ({products}) => {
   return (
     <>
       <HeroBanner />
@@ -20,10 +20,27 @@ const Home = ({products, bannerData}) => {
           <h2>Check What We Have</h2>
         </div>
         <Swiper
-            modules={[Navigation, A11y]}
-            spaceBetween={0}
-            slidesPerView={3}
-            navigation
+          breakpoints={{
+              // width >= 300
+              300: {
+                slidesPerView: 1,
+                spaceBetween: 100
+              },
+              // width >= 1000
+              1000: {
+                slidesPerView: 2,
+                spaceBetween: 0
+              },
+              // width >= 1260
+              1260: {
+                slidesPerView: 3,
+                spaceBetween: 0
+              }
+          }}
+          modules={[Navigation, A11y]}
+          spaceBetween={0}
+          slidesPerView={3}
+          navigation
         >
           <div className='products-container'>
             {products?.map(product => (
@@ -44,11 +61,11 @@ const Home = ({products, bannerData}) => {
 export const getServerSideProps = async () => {
   const query = '*[_type == "product"]';
   const products = await client.fetch(query);
-  const bannerQuery = '*[_type == "banner"]';
-  const bannerData = await client.fetch(bannerQuery);
+  // const bannerQuery = '*[_type == "banner"]';
+  // const bannerData = await client.fetch(bannerQuery);
 
   return {
-    props: { products, bannerData }
+    props: { products }
   }
 }
 
