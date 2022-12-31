@@ -704,6 +704,8 @@ nav input {
 .features-section .content .left {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
 .features-section .content .left .feature-background {
@@ -713,8 +715,6 @@ nav input {
   position: absolute;
   color: #212121;
   opacity: 0.07;
-  top: -5%;
-  left: -1%;
   z-index: 1;
 }
 .features-section .content .left div {
@@ -758,6 +758,10 @@ nav input {
 /*-------------------- NEWSLETTER SECTION ------------------*/
 .newsletter {
   padding: 10rem 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   position: relative;
   z-index: 1;
@@ -768,7 +772,6 @@ nav input {
   line-height: 151px;
   color: #f2f3f7;
   position: absolute;
-  left: 25%;
   z-index: -1;
 }
 .newsletter h1 {
@@ -1095,11 +1098,13 @@ footer p, footer li {
   /*-------------------- FEATURES SECTION ------------------*/
   .features-section .title h1 {
       width: 100%;
-  }  
+  } 
+  .features-section .content .left .feature-background {
+    font-size: 6rem;
+  } 
   /*-------------------- NEWSLETTER SECTION ------------------*/
   .newsletter-background {
       font-size: 6.2rem;
-      transform: translate(-15%, 10%);
   }
   .newsletter button {
       padding: 10px 40px;
@@ -1244,7 +1249,6 @@ footer p, footer li {
   }
   .newsletter-background {
     font-size: 4.8rem;
-    transform: translate(-25%, 10%);
   }
   .newsletter h1 {
     margin-bottom: 0.5rem;
@@ -1261,7 +1265,7 @@ footer p, footer li {
   }
   /*-------------------- FOOTER SECTION ------------------*/
   .footer {
-    padding: 4rem;
+    padding: 4rem 2rem;
   }
   .copyright {
     grid-template-columns: 1fr;
@@ -1295,7 +1299,6 @@ footer p, footer li {
   }
   .newsletter-background {
     font-size: 4rem;
-    transform: translate(0, 50%);
   }
   /*-------- SINGLE PRODUCT PAGE ----------*/
   .small-image{
