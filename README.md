@@ -25,7 +25,7 @@ This project is a full stack e-commerce website created with Next js. I created 
 - Connecting Stripe APIs to power online payment processing for e-commerce
 
 ### Screenshot
-![Design overview for Dine Market e-commerce](./src/assets/header.png)
+![Design overview for Dine Market e-commerce](./src/assets/header-section.png)
 
 ### Links
 The live site has not been published yet
