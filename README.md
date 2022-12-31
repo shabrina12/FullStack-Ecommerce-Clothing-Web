@@ -7,6 +7,7 @@ This project is a full stack e-commerce website created with Next js. I created 
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
+  - [Credit](#credit)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
