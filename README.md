@@ -31,7 +31,7 @@ This project is a full stack e-commerce website created with Next js. I created 
 
 ### Links
 The live site is deployed in vercel, but it seems that vercel can't render swiper js. In the meantime i'm still trying to find a solution
-- [Live Site URL](https://full-stack-ecommerce-clothing.vercel.app/)
+- [Live Site URL](https://full-stack-ecommerce-clothing-pfg76mff9-shabrina12.vercel.app/)
 
 ### Credit
 [Figma Web Design & UI kit i used for this project is design by Weird Design Studio](https://ui8.net/ui-market/products/e-commerce-ui-website-design?status=7)
