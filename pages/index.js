@@ -1,7 +1,7 @@
 import React from 'react'
 import {client} from '../lib/client'
 import { HeroBanner, EventsBanner, Newsletter, FeaturesBanner, Product } from '../components'
-import { Navigation, A11y } from 'swiper';
+import { Navigation, A11y, Lazy } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles

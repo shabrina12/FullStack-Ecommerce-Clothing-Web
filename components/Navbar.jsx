@@ -7,9 +7,10 @@ import Link from 'next/link'
 import {RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import { useStateContext } from '../context/StateContext';
 
-const Navbar = () => {
+const Navbar = ({Searchproducts}) => {
   const {showCart, setShowCart, totalQty} = useStateContext();
   const [toggleMenu, setToggleMenu] = useState(false);
+  // const [searchTerm, setSearchTerm] = useState('')
 
   return (
     <nav>
@@ -23,10 +24,15 @@ const Navbar = () => {
         <Link href='/products'><li>All Products</li></Link>
       </ul>
 
-      <div className='search-bar'>
-        <CiSearch />
-        <input type='text' placeholder='What you looking for'/>
-      </div>
+        <div className='search-bar'>
+          <CiSearch />
+          <input 
+            type='text' 
+            placeholder='What you looking for'/>
+        </div>
+        {/* onChange={(event) => {
+              setSearchTerm(event.target.value);
+          }} */}
 
       {showCart ?
       <Link href='/cart'>
