@@ -22,6 +22,7 @@ This project is a full stack e-commerce website created with Next js. I created 
 ### The challenge
 
 - Build out the project to the designs provided
+- Implementing cart functionality 
 - Connecting to Sanity as back end database for e-commerce
 - Connecting Stripe APIs to power online payment processing for e-commerce
 
@@ -29,8 +30,8 @@ This project is a full stack e-commerce website created with Next js. I created 
 ![Design overview for Dine Market e-commerce](./src/assets/header-section.png)
 
 ### Links
-The live site has not been published yet
-- [Live Site URL](not yet)
+The live site is deployed in vercel, but it seems that vercel can't render swiper js. In the meantime i'm still trying to find a solution
+- [Live Site URL](https://full-stack-ecommerce-clothing.vercel.app/)
 
 ### Credit
 [Figma Web Design & UI kit i used for this project is design by Weird Design Studio](https://ui8.net/ui-market/products/e-commerce-ui-website-design?status=7)
@@ -54,21 +55,20 @@ The live site has not been published yet
 
 ### What I learned
 
-I learned an easy way to add slider function in product section using swiper js library. And add text as a background in the features and newsletter section as shown below
+I learned a new css styling to put text in a background as shown below
 ![adding text as background](./src/assets/middle-section.png)
 
 Code snippets, see below:
 ```js
 empty for now
 ```
+
+I also learned how to connect stripe as payment gate for e-commerce
 ![payment with stripe](./src/assets/payment.png)
 ![payment success](./src/assets/success-pay.png)
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-
 ### Continued development
-The project is still under development
+The development of this project can be continued by adding a search filter functionality, an e-commerce newsletter, activate the slider function for product section in homepage. In the near future, I'm going to explore react js search filters and maybe add that functionality myself.
 
 ### Useful resources
 - [UI/UX Design Resources](https://ui8.net/) - This website provide many UI/UX design, some are even free.
@@ -95,9 +95,3 @@ To run the development server:
 ```bash
 npm run dev
 ```
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
