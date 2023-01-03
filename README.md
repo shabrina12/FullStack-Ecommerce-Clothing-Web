@@ -90,7 +90,7 @@ The development of this project can be continued by adding a search filter funct
 ## Author
 
 - Github - [Shabrina Putri](https://github.com/shabrina12/)
-- Instagram - [@shabputri_](https://www.twitter.com/yourusername)
+- Instagram - [@shabputri_](https://www.instagram.com/shabputri_/)
 
 
 ## Acknowledgments
