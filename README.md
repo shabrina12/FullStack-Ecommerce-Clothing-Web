@@ -47,7 +47,6 @@ The live site is deployed in vercel, but it seems that vercel can't render swipe
 - Flexbox
 - CSS Grid
 - [Next JS](https://nextjs.org/) - React Framework for Production
-- [React JS](https://reactjs.org/) - JS library for building UI
 - [Sanity](https://www.sanity.io/) - Sanity is a customizable solution that treats content as data to power digital business.
 - [Stripe](https://stripe.com/en-gb-us) - APIs to power online payment processing for e-commerce
 - [react-hot-toast](https://react-hot-toast.com/) - react library that adds beautiful notifications to our react application. 
