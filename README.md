@@ -71,8 +71,7 @@ By setting position to absolute and z-index to -1 (or lower than any other z-ind
 z-index is a CSS property that defines the order of overlapping HTML elements. Elements with a higher index will be placed on top of elements with a lower index
 ![adding text as background](./src/assets/middle-section.png)
 
-I also learned how to connect stripe as payment gate for e-commerce
-Full code for connecting to stripe in /pages/api/stripe.js
+I also learned how to connect stripe as payment gate for e-commerce. Full code for connecting to stripe in /pages/api/stripe.js
 ![payment with stripe](./src/assets/payment.png)
 
 The confetti effect is implemented on the payment success page after the user successfully checkouts their cart
