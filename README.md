@@ -58,12 +58,51 @@ The live site is deployed in vercel, but it seems that vercel can't render swipe
 I learned a new css styling to put text in a background as shown below
 ![adding text as background](./src/assets/middle-section.png)
 
+I also learned how to connect stripe as payment gate for e-commerce
 Code snippets, see below:
 ```js
-empty for now
-```
+import Stripe from 'stripe';
 
-I also learned how to connect stripe as payment gate for e-commerce
+const stripe = new Stripe(process.env.NEXT_SECRET_STRIPE_KEY);
+
+export default async function handler(req, res) {
+  if (req.method === 'POST') {
+    try {
+      // Create Checkout Sessions from body params.
+      const params = {
+        submit_type: 'pay',
+        mode: 'payment',
+        payment_method_types: ['card'],
+        billing_address_collection: 'auto',
+        shipping_options: [
+            { shipping_rate: 'shr_1MJIEoHbmXqvpyhdyi5WNQHl' },
+            { shipping_rate: 'shr_1MJIGgHbmXqvpyhdQCdPgK8F' }
+        ],
+        line_items: req.body.map((item) => {
+          const img = item.image[0].asset._ref;
+          const newImage = img.replace('image-', 'https://cdn.sanity.io/images/dow10h3v/production/').replace('-png', '.png');
+
+          return {
+            price_data: { 
+              currency: 'usd',
+              product_data: { 
+                name: item.name,
+                images: [newImage],
+              },
+              unit_amount: item.price * 100,
+            },
+            adjustable_quantity: {
+              enabled:true,
+              minimum: 1,
+            },
+            quantity: item.quantity
+          }
+        }),
+        success_url: `${req.headers.origin}/successPay`,
+        cancel_url: `${req.headers.origin}/canceled`,
+      }
+}
+```
 ![payment with stripe](./src/assets/payment.png)
 ![payment success](./src/assets/success-pay.png)
 
