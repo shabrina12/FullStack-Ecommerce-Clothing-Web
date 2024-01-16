@@ -13,12 +13,11 @@ This project is a full stack e-commerce website built with Next js. I created th
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [Author](#author)
 - [Acknowledgments](#acknowledgments)
 - [Getting Started](#getting-started)
 
 
-## Overview
+## 🚨 Overview
 
 ### The challenge
 
@@ -38,7 +37,7 @@ The live site is deployed in vercel, but it seems that vercel can't render swipe
 ### Credit
 [Figma Web Design & UI kit i used for this project is design by Weird Design Studio](https://ui8.net/ui-market/products/e-commerce-ui-website-design?status=7)
 
-## My process
+## ⚙️ My process
 
 ### Built with
 
@@ -86,19 +85,12 @@ The development of this project can be continued by adding a search filter funct
 - [Swiper React Components](https://swiperjs.com/react#styles)
 - [Customize Prev/Next Button of Swiper Arrows](https://www.timo-ernst.net/blog/2020/09/12/arrows-in-react-swiper-js-how-to-customize-prev-next-button/)
 
-
-## Author
-
-- Github - [Shabrina Putri](https://github.com/shabrina12/)
-- Instagram - [@shabputri_](https://www.instagram.com/shabputri_/)
-
-
 ## Acknowledgments
 
 A HUGE Thanks to Javascript Mastery youtube channel which really helps me in learning about web development. I recommend this channel to everyone who wants to learn about web development and javascript
 
 
-## Getting Started
+## 🤸 Getting Started
 
 To run the development server:
 
